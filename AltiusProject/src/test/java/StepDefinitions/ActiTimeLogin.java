@@ -43,6 +43,7 @@ public class ActiTimeLogin {
 		JavascriptExecutor j= (JavascriptExecutor) driver;
 		String title=(String) j.executeScript("return document.title");
 		System.out.println(title);
+		System.out.println(res);
 		Assert.assertTrue(res);
 		
 		
