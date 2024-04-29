@@ -30,6 +30,7 @@ public class GoogleSearchPage {
 	@Then("search page should be displayed")
 	public void search_page_should_be_displayed() {
 	    System.out.println(driver.getTitle());
+	    driver.quit();
 	}
 
 }
