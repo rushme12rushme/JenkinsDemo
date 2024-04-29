@@ -44,7 +44,7 @@ public class ActiTimeLogin {
 		String title=(String) j.executeScript("return document.title");
 		System.out.println(title);
 		Assert.assertTrue(res);
-		driver.quit();
+		
 		
 	    
 	}
