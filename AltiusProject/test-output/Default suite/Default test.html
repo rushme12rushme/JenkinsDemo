@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>1/2/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/10/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Apr 29 19:08:40 IST 2024</td>
+<td>Started on:</td><td>Tue Apr 30 14:41:39 IST 2024</td>
 </tr>
-<tr><td>Total time:</td><td>35 seconds (35973 ms)</td>
+<tr><td>Total time:</td><td>1 seconds (1561 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,70 +76,124 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='Runner.RunnerClass.runScenario()'><b>runScenario</b><br>Test class: Runner.RunnerClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Login to actitime with multiple data", "Login Feature"</td>
-<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for title to contain &quot;Enter&quot;. Current title: &quot;actiTIME - Login&quot; (tried for 10 second(s) with 500 milliseconds interval)
-Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.91, chrome: {chromedriverVersion: 124.0.6367.91 (51df0e5e17a8..., userDataDir: C:\Users\rushm\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60295}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60295/devtoo..., se:cdpVersion: 124.0.6367.91, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 4cc06c5039379e861f9cd74771ccfee6
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at StepDefinitions.ActiTimeLogin.homepage_must_be_displayed(ActiTimeLogin.java:42)
-	at ✽.Homepage must be displayed(file:///C:/Users/rushm/git/repository/AltiusProject/FeatureFiles/ActiTimeLogin.feature:6)
-</pre></div><a href='#' onClick='toggleBox("stack-trace390994793", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace390994793'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for title to contain &quot;Enter&quot;. Current title: &quot;actiTIME - Login&quot; (tried for 10 second(s) with 500 milliseconds interval)
-Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.91, chrome: {chromedriverVersion: 124.0.6367.91 (51df0e5e17a8..., userDataDir: C:\Users\rushm\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60295}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60295/devtoo..., se:cdpVersion: 124.0.6367.91, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 4cc06c5039379e861f9cd74771ccfee6
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at StepDefinitions.ActiTimeLogin.homepage_must_be_displayed(ActiTimeLogin.java:42)
-	at ✽.Homepage must be displayed(file:///C:/Users/rushm/git/repository/AltiusProject/FeatureFiles/ActiTimeLogin.feature:6)
+<td title='Runner.RunnerClass.runScenario()'><b>runScenario</b><br>Test class: Runner.RunnerClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Create Customer", "Customer Module"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.getTitle()&quot; because &quot;this.driver&quot; is null
+	at StepDefinitions.CustomerModule.user_should_be_present_in_homepage(CustomerModule.java:24)
+	at ✽.User should be present in homepage &quot;actiTIME -  Enter Time-Track&quot;(file:///C:/Users/rushm/git/repository/AltiusProject/FeatureFiles/CustomerModule.feature:3)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1928621590", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1928621590'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.getTitle()&quot; because &quot;this.driver&quot; is null
+	at StepDefinitions.CustomerModule.user_should_be_present_in_homepage(CustomerModule.java:24)
+	at ✽.User should be present in homepage &quot;actiTIME -  Enter Time-Track&quot;(file:///C:/Users/rushm/git/repository/AltiusProject/FeatureFiles/CustomerModule.feature:3)
 </pre></div></td>
-<td>13</td>
+<td>0</td>
 <td>Runner.RunnerClass@618b19ad</td></tr>
 <tr>
-<td title='Runner.RunnerClass.runScenario()'><b>runScenario</b><br>Test class: Runner.RunnerClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Login to actitime with multiple data", "Login Feature"</td>
-<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for title to contain &quot;Enter&quot;. Current title: &quot;actiTIME - Login&quot; (tried for 10 second(s) with 500 milliseconds interval)
-Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.91, chrome: {chromedriverVersion: 124.0.6367.91 (51df0e5e17a8..., userDataDir: C:\Users\rushm\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60326}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60326/devtoo..., se:cdpVersion: 124.0.6367.91, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: ca5df2b0380135d08c7c5af661a54838
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at StepDefinitions.ActiTimeLogin.homepage_must_be_displayed(ActiTimeLogin.java:42)
-	at ✽.Homepage must be displayed(file:///C:/Users/rushm/git/repository/AltiusProject/FeatureFiles/ActiTimeLogin.feature:6)
-</pre></div><a href='#' onClick='toggleBox("stack-trace568462037", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace568462037'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for title to contain &quot;Enter&quot;. Current title: &quot;actiTIME - Login&quot; (tried for 10 second(s) with 500 milliseconds interval)
-Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.91, chrome: {chromedriverVersion: 124.0.6367.91 (51df0e5e17a8..., userDataDir: C:\Users\rushm\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60326}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60326/devtoo..., se:cdpVersion: 124.0.6367.91, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: ca5df2b0380135d08c7c5af661a54838
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at StepDefinitions.ActiTimeLogin.homepage_must_be_displayed(ActiTimeLogin.java:42)
-	at ✽.Homepage must be displayed(file:///C:/Users/rushm/git/repository/AltiusProject/FeatureFiles/ActiTimeLogin.feature:6)
+<td title='Runner.RunnerClass.runScenario()'><b>runScenario</b><br>Test class: Runner.RunnerClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Create Customer", "Customer Module"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.getTitle()&quot; because &quot;this.driver&quot; is null
+	at StepDefinitions.CustomerModule.user_should_be_present_in_homepage(CustomerModule.java:24)
+	at ✽.User should be present in homepage &quot;actiTIME -  Enter Time-Track&quot;(file:///C:/Users/rushm/git/repository/AltiusProject/FeatureFiles/CustomerModule.feature:3)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1878992188", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1878992188'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.getTitle()&quot; because &quot;this.driver&quot; is null
+	at StepDefinitions.CustomerModule.user_should_be_present_in_homepage(CustomerModule.java:24)
+	at ✽.User should be present in homepage &quot;actiTIME -  Enter Time-Track&quot;(file:///C:/Users/rushm/git/repository/AltiusProject/FeatureFiles/CustomerModule.feature:3)
 </pre></div></td>
-<td>14</td>
+<td>0</td>
 <td>Runner.RunnerClass@618b19ad</td></tr>
-</table><p>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td><b>Attribute(s)</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
 <tr>
-<td title='Runner.RunnerClass.runScenario()'><b>runScenario</b><br>Test class: Runner.RunnerClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Login to actitime with multiple data", "Login Feature"</td>
-<td></td>
-<td>6</td>
+<td title='Runner.RunnerClass.runScenario()'><b>runScenario</b><br>Test class: Runner.RunnerClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Create Customer", "Customer Module"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.getTitle()&quot; because &quot;this.driver&quot; is null
+	at StepDefinitions.CustomerModule.user_should_be_present_in_homepage(CustomerModule.java:24)
+	at ✽.User should be present in homepage &quot;actiTIME -  Enter Time-Track&quot;(file:///C:/Users/rushm/git/repository/AltiusProject/FeatureFiles/CustomerModule.feature:3)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1495161082", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1495161082'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.getTitle()&quot; because &quot;this.driver&quot; is null
+	at StepDefinitions.CustomerModule.user_should_be_present_in_homepage(CustomerModule.java:24)
+	at ✽.User should be present in homepage &quot;actiTIME -  Enter Time-Track&quot;(file:///C:/Users/rushm/git/repository/AltiusProject/FeatureFiles/CustomerModule.feature:3)
+</pre></div></td>
+<td>0</td>
+<td>Runner.RunnerClass@618b19ad</td></tr>
+<tr>
+<td title='Runner.RunnerClass.runScenario()'><b>runScenario</b><br>Test class: Runner.RunnerClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Create Customer", "Customer Module"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.getTitle()&quot; because &quot;this.driver&quot; is null
+	at StepDefinitions.CustomerModule.user_should_be_present_in_homepage(CustomerModule.java:24)
+	at ✽.User should be present in homepage &quot;actiTIME -  Enter Time-Track&quot;(file:///C:/Users/rushm/git/repository/AltiusProject/FeatureFiles/CustomerModule.feature:3)
+</pre></div><a href='#' onClick='toggleBox("stack-trace852190062", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace852190062'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.getTitle()&quot; because &quot;this.driver&quot; is null
+	at StepDefinitions.CustomerModule.user_should_be_present_in_homepage(CustomerModule.java:24)
+	at ✽.User should be present in homepage &quot;actiTIME -  Enter Time-Track&quot;(file:///C:/Users/rushm/git/repository/AltiusProject/FeatureFiles/CustomerModule.feature:3)
+</pre></div></td>
+<td>0</td>
+<td>Runner.RunnerClass@618b19ad</td></tr>
+<tr>
+<td title='Runner.RunnerClass.runScenario()'><b>runScenario</b><br>Test class: Runner.RunnerClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Create Customer", "Customer Module"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.getTitle()&quot; because &quot;this.driver&quot; is null
+	at StepDefinitions.CustomerModule.user_should_be_present_in_homepage(CustomerModule.java:24)
+	at ✽.User should be present in homepage &quot;actiTIME -  Enter Time-Track&quot;(file:///C:/Users/rushm/git/repository/AltiusProject/FeatureFiles/CustomerModule.feature:3)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1245593227", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1245593227'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.getTitle()&quot; because &quot;this.driver&quot; is null
+	at StepDefinitions.CustomerModule.user_should_be_present_in_homepage(CustomerModule.java:24)
+	at ✽.User should be present in homepage &quot;actiTIME -  Enter Time-Track&quot;(file:///C:/Users/rushm/git/repository/AltiusProject/FeatureFiles/CustomerModule.feature:3)
+</pre></div></td>
+<td>0</td>
+<td>Runner.RunnerClass@618b19ad</td></tr>
+<tr>
+<td title='Runner.RunnerClass.runScenario()'><b>runScenario</b><br>Test class: Runner.RunnerClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Create Customer", "Customer Module"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.getTitle()&quot; because &quot;this.driver&quot; is null
+	at StepDefinitions.CustomerModule.user_should_be_present_in_homepage(CustomerModule.java:24)
+	at ✽.User should be present in homepage &quot;actiTIME -  Enter Time-Track&quot;(file:///C:/Users/rushm/git/repository/AltiusProject/FeatureFiles/CustomerModule.feature:3)
+</pre></div><a href='#' onClick='toggleBox("stack-trace118555812", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace118555812'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.getTitle()&quot; because &quot;this.driver&quot; is null
+	at StepDefinitions.CustomerModule.user_should_be_present_in_homepage(CustomerModule.java:24)
+	at ✽.User should be present in homepage &quot;actiTIME -  Enter Time-Track&quot;(file:///C:/Users/rushm/git/repository/AltiusProject/FeatureFiles/CustomerModule.feature:3)
+</pre></div></td>
+<td>0</td>
+<td>Runner.RunnerClass@618b19ad</td></tr>
+<tr>
+<td title='Runner.RunnerClass.runScenario()'><b>runScenario</b><br>Test class: Runner.RunnerClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Create Customer", "Customer Module"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.getTitle()&quot; because &quot;this.driver&quot; is null
+	at StepDefinitions.CustomerModule.user_should_be_present_in_homepage(CustomerModule.java:24)
+	at ✽.User should be present in homepage &quot;actiTIME -  Enter Time-Track&quot;(file:///C:/Users/rushm/git/repository/AltiusProject/FeatureFiles/CustomerModule.feature:3)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1716164115", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1716164115'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.getTitle()&quot; because &quot;this.driver&quot; is null
+	at StepDefinitions.CustomerModule.user_should_be_present_in_homepage(CustomerModule.java:24)
+	at ✽.User should be present in homepage &quot;actiTIME -  Enter Time-Track&quot;(file:///C:/Users/rushm/git/repository/AltiusProject/FeatureFiles/CustomerModule.feature:3)
+</pre></div></td>
+<td>0</td>
+<td>Runner.RunnerClass@618b19ad</td></tr>
+<tr>
+<td title='Runner.RunnerClass.runScenario()'><b>runScenario</b><br>Test class: Runner.RunnerClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Create Customer", "Customer Module"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.getTitle()&quot; because &quot;this.driver&quot; is null
+	at StepDefinitions.CustomerModule.user_should_be_present_in_homepage(CustomerModule.java:24)
+	at ✽.User should be present in homepage &quot;actiTIME -  Enter Time-Track&quot;(file:///C:/Users/rushm/git/repository/AltiusProject/FeatureFiles/CustomerModule.feature:3)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1721045976", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1721045976'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.getTitle()&quot; because &quot;this.driver&quot; is null
+	at StepDefinitions.CustomerModule.user_should_be_present_in_homepage(CustomerModule.java:24)
+	at ✽.User should be present in homepage &quot;actiTIME -  Enter Time-Track&quot;(file:///C:/Users/rushm/git/repository/AltiusProject/FeatureFiles/CustomerModule.feature:3)
+</pre></div></td>
+<td>0</td>
+<td>Runner.RunnerClass@618b19ad</td></tr>
+<tr>
+<td title='Runner.RunnerClass.runScenario()'><b>runScenario</b><br>Test class: Runner.RunnerClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Create Customer", "Customer Module"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.getTitle()&quot; because &quot;this.driver&quot; is null
+	at StepDefinitions.CustomerModule.user_should_be_present_in_homepage(CustomerModule.java:24)
+	at ✽.User should be present in homepage &quot;actiTIME -  Enter Time-Track&quot;(file:///C:/Users/rushm/git/repository/AltiusProject/FeatureFiles/CustomerModule.feature:3)
+</pre></div><a href='#' onClick='toggleBox("stack-trace363397863", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace363397863'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.getTitle()&quot; because &quot;this.driver&quot; is null
+	at StepDefinitions.CustomerModule.user_should_be_present_in_homepage(CustomerModule.java:24)
+	at ✽.User should be present in homepage &quot;actiTIME -  Enter Time-Track&quot;(file:///C:/Users/rushm/git/repository/AltiusProject/FeatureFiles/CustomerModule.feature:3)
+</pre></div></td>
+<td>0</td>
+<td>Runner.RunnerClass@618b19ad</td></tr>
+<tr>
+<td title='Runner.RunnerClass.runScenario()'><b>runScenario</b><br>Test class: Runner.RunnerClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Create Customer", "Customer Module"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.getTitle()&quot; because &quot;this.driver&quot; is null
+	at StepDefinitions.CustomerModule.user_should_be_present_in_homepage(CustomerModule.java:24)
+	at ✽.User should be present in homepage &quot;actiTIME -  Enter Time-Track&quot;(file:///C:/Users/rushm/git/repository/AltiusProject/FeatureFiles/CustomerModule.feature:3)
+</pre></div><a href='#' onClick='toggleBox("stack-trace798278875", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace798278875'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.getTitle()&quot; because &quot;this.driver&quot; is null
+	at StepDefinitions.CustomerModule.user_should_be_present_in_homepage(CustomerModule.java:24)
+	at ✽.User should be present in homepage &quot;actiTIME -  Enter Time-Track&quot;(file:///C:/Users/rushm/git/repository/AltiusProject/FeatureFiles/CustomerModule.feature:3)
+</pre></div></td>
+<td>0</td>
 <td>Runner.RunnerClass@618b19ad</td></tr>
 </table><p>
 </body>
